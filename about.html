@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 
 <html lang="{{ site.lang | default: "en-US" }}">
-
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>EMIP Toolkit</title>
   </head>
-
   <body>
-
     <header class = "banner" style = "position: relative;">
       <span><h1 class = "bannertitle"><a style = "text-decoration: none; color: white;" href = "default.html">EMIP Toolkit</a></h1></span>
       <h6 class = "bannersubtitle">A Python Library for Processing Eye Movement in Programming Data</h6>
       <a class = "btn" href="about.html">About</a>
     </header>
-
-    <!Copy above to every page ------------------------------->
+    <!Copy above to every page ------------------------------------------>
 
     <main>
-      <h1 class = "pagetitle">About Page</h1>
+      <h1 class = "pagetitle">About the EMIP Toolkit</h1>
+
+      <p style = "padding-top: 40px;" class = "paragraph">The use of eye tracking in the study of program comprehension
+        in software engineering allows researchers to gain a better understanding of the
+        strategies and processes applied by programmers. Despite the large number of eye tracking studies in software engineering,
+        very few datasets are publicly available.
+        The existence of the large Eye Movements in Programming Dataset (EMIP) opens the door for new studies and makes
+        reproducibility of existing research easier. The toolkit is specifically designed to make using the EMIP dataset easier
+        and more accessible. It implements features for fixation detection and correction, trial visualization,
+        source code lexical data enrichment, and mapping fixation data over areas of interest.</p>
+
+      <a class = "link" href = "epicgames.com">Read More...</a>
+
+      <div style = "text-align: center; position: relative; top: 20px;">
+        <iframe width="600" height="300"
+        src="https://www.youtube.com/embed/wFdGyM6qUlE">
+        </iframe>
+      </div>
+
     </main>
 
   </body>
