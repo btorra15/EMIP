@@ -103,3 +103,27 @@
   margin-left: 120px;
   margin-right: 120px;
 }
+
+.verticalmenu{
+  width: 250px;
+  font-family: "Mulish";
+  font-weight: 800;
+  color: white;
+  background-color: #196700;
+}
+
+.verticalmenu ul{
+
+}
+.verticalmenu li{
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* height: 50px; */
+  list-style: none;
+  background-color: #196700;
+}
+
+.verticalmenu li:hover{
+  background-color: #509839;
+}
