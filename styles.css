@@ -89,8 +89,10 @@
   line-height: 2;
   margin-left: 120px;
   margin-right: 120px;
+  padding-top: 20px;
 }
 
+/* only use when by itself, not in paragraphs */
 .link{
   font-family: "Mulish";
   font-weight: 400;

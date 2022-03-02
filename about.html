@@ -20,7 +20,7 @@
     <main>
       <h1 class = "pagetitle">About the EMIP Toolkit</h1>
 
-      <p style = "padding-top: 40px;" class = "paragraph">The use of eye tracking in the study of program comprehension
+      <p class = "paragraph">The use of eye tracking in the study of program comprehension
         in software engineering allows researchers to gain a better understanding of the
         strategies and processes applied by programmers. Despite the large number of eye tracking studies in software engineering,
         very few datasets are publicly available.
@@ -28,13 +28,56 @@
         reproducibility of existing research easier. The toolkit is specifically designed to make using the EMIP dataset easier
         and more accessible. It implements features for fixation detection and correction, trial visualization,
         source code lexical data enrichment, and mapping fixation data over areas of interest.</p>
-
-      <a class = "link" href = "epicgames.com">Read More...</a>
+      <a class = "link" href = "https://www.researchgate.net/publication/350485560_EMIP_Toolkit_A_Python_Library_for_Customized_Post-processing_of_the_Eye_Movements_in_Programming_Dataset">Read More...</a>
 
       <div style = "text-align: center; position: relative; top: 20px;">
         <iframe width="600" height="300"
         src="https://www.youtube.com/embed/wFdGyM6qUlE">
         </iframe>
+      </div>
+
+      <h1 class = "subheader" style = "position:relative; top: 20px;">Please Cite:</h1>
+      <p class = "paragraph">Naser Al Madi, Drew T. Guarnera, Bonita Sharif, and Jonathan I. Maletic.2021.
+        EMIP Toolkit: A Python Library for Customized Post-processing of the Eye Movements in Programming Dataset.
+        In ETRA ’21: 2021 Symposium on Eye Tracking Research and Applications (ETRA ’21 Short Papers), May25–27, 2021,
+        Virtual Event, Germany. ACM, New York, NY, USA, 6 pages. https://doi.org/10.1145/3448018.3457425</p>
+
+      <h1 class = "subheader">Features:</h1>
+      <div class = "paragraph">
+        <p style = "padding-bottom: 10px">The toolkit is specifically designed to make using the EMIP dataset easier and more accessible by providing the following functions:</p>
+        <ul style = "padding-left: 40px;">
+          <li style = "padding-bottom: 10px;">Parsing raw data files from the EMIP dataset into Experiment, Trial, and Fixation containers.</li>
+          <li style = "padding-bottom: 10px;">Customizable dispersion-based fixation detection algorithm implementation according to the manual of the SMI eye tracker used in the data collection.</li>
+          <li style = "padding-bottom: 10px;">Raw data and filtered data visualizations for each trial.</li>
+          <li style = "padding-bottom: 10px;">Performing hit testing between fixations and AOIs to determine the fixations over each AOI.</li>
+          <li style = "padding-bottom: 10px;">Customizable offset-based fixation correction implementation for each trial.</li>
+          <li style = "padding-bottom: 10px;">Customizable Areas Of Interest (AOIs) mapping implementation at the line level or token level in source code for each trial.</li>
+          <li style = "padding-bottom: 10px;">Visualizing AOIs before and after fixations overlay on the code stimulus.</li>
+          <li style = "padding-bottom: 10px;">Mapping source code tokens to generated AOIs and eye movement data.</li>
+          <li style = "padding-bottom: 10px;">Adding source code lexical category tags to eye movement data using <a style = "color: #33C407;" href="https://www.srcml.org/">srcML</a>. srcML is a static analysis tool and data format that provides very accurate syntactic categories (method signatures, parameters, function names, method calls, declarations and so on) for source code. We use it to enhance the eye movements dataset to enable better querying capabilities. </li>
+          <li style = "padding-bottom: 10px;">Downloading specific datasets from the <a style = "color: #33C407;" href="https://osf.io/j6vt3/">EMIP-Toolkit replication package</a> and other data sources.</li>
+        </ul>
+      </div>
+
+      <h1 class = "subheader">Examples and Tutorial:</h1>
+      <p class = "paragraph">The Jupyter Notebook file “EMIP Toolkit Examples.ipynb” contains examples
+        and a tutorial on using the EMIP Toolkit.
+        The file describes the required file structure and raw EMIP files and metadata from <a style = "color: #33C407;" href="http://emipws.org/">here.</a></p>
+
+      <h1 class = "subheader">Corrected Dataset:</h1>
+      <p class = "paragraph">The directory “Corrected EMIP Dataset” includes our second contribution of a filtered,
+        corrected, and processed version of the EMIP dataset.</p>
+
+      <h1 class = "subheader">Requirements:</h1>
+      <div class = "paragraph">
+
+        <ul style = "padding-left: 40px;">
+          <li style = "padding-bottom: 10px;">numpy</li>
+          <li style = "padding-bottom: 10px;">pandas</li>
+          <li style = "padding-bottom: 10px;">matplotlib</li>
+          <li style = "padding-bottom: 10px;">Pillow</li>
+          <li style = "padding-bottom: 10px;">requests</li>
+        </ul>
       </div>
 
     </main>
