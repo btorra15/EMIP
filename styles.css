@@ -127,3 +127,7 @@
 .verticalmenu li:hover{
   background-color: #509839;
 }
+
+.codehighlight div{
+  backgroud-color: #2A2A2A;
+}
