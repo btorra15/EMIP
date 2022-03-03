@@ -24,14 +24,15 @@
 
       <div style = "padding-top: 0px; position: fixed;">
         <ul class = "verticalmenu">
-          <li>A</li>
+          <a style = "text-decoration: none; color:white;" href = "#aoi"><li>AOI</li></a>
           <li>B</li>
           <li>C</li>
           <li>D</li>
         </ul>
       </div>
 
-      <h1 class = "subheader_d">Add Srcml to AOIs (add_srcml_to_AOIs.py)</h1>
+      <h1 class = "header_d" id = "aoi">AOI</h1>
+      <h1 class = "subheader_d">Add Srcml to AOIs</h1>
 
       <pre class = "codehighlight"><code><span class = "functiondef">def</span><span class = "functionname"> add_srcml_to_AOIs</span><span class = "misc">(</span>
         <span class = "variables">aois_raw: pandas.core.frame.DataFrame,
@@ -52,6 +53,28 @@
       <h1 class = "docsection">Returns</h1>
 
       <p class = "paragraph_d">pandas.DataFrame AOI dataframe with srcML</p>
+
+      <h1 class = "subheader_d">Add Tokens to AOIs</h1>
+
+      <pre class = "codehighlight"><code><span class = "functiondef">def</span><span class = "functionname"> add_tokens_to_AOIs</span><span class = "misc">(</span>
+        <span class = "variables">file_path:</span><span class = "functiondef">str</span><span class = "variables">
+      aois_raw: pandas.core.frame.DataFrame</span><span class = "functiondef"> str</span><span class = "misc">
+)</span><span class = "misc">-></span><span class = "misc">pd.</span><span class = "variables">dataframe</span><span class = "misc">:</span></code></pre>
+
+    <p class = "paragraph_d">Adds tokens from code files to aois dataframe and returns it.</p>
+
+    <h1 class = "docsection">Parameters</h1>
+
+    <div class = "paragraph_d">
+      <ul style = "padding-left: 40px;">
+        <li style = "padding-bottom: 10px;">file_path : str path to directory where code files are stored. In EMIP this is "emip_stimulus_programs"</li>
+        <li style = "padding-bottom: 10px;">aois_raw : pandas.Dataframe the dataframe where AOIs are stored.</li>
+      </ul>
+    </div>
+
+    <h1 class = "docsection">Returns</h1>
+
+    <p class = "paragraph_d">pandas.DataFrame a dataframe of AOIs with token information</p>
 
     </main>
 
