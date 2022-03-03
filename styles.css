@@ -138,6 +138,8 @@
   margin-left: 355px;
   width: 450px;
   border-radius: 4px;
+  position: relative;
+  top: 20px;
 }
 
 .functiondef{
@@ -166,4 +168,34 @@
   font-family: 'Source Code Pro', monospace;
   font-weight: 400;
   color: #6663FF;
+}
+
+.paragraph_d{
+  font-family: "Mulish";
+  font-weight: 400;
+  color: #696969;
+  font-size: 20px;
+  padding-left: 30px;
+  line-height: 2;
+  margin-left: 325px;
+  margin-right: 325px;
+  padding-top: 20px;
+}
+
+.subheader_d{
+  font-family: "Mulish";
+  font-weight: 800;
+  color: #007B1E;
+  padding-top: 40px;
+  padding-left: 30px;
+  margin-left: 325px;
+}
+
+.docsection{
+  font-family: "Mulish";
+  font-weight: 400;
+  color: #007B1E;
+  padding-top: 40px;
+  padding-left: 30px;
+  margin-left: 325px;
 }
