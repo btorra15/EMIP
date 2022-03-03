@@ -52,7 +52,7 @@
 
       <h1 class = "docsection">Returns</h1>
 
-      <p class = "paragraph_d">pandas.DataFrame AOI dataframe with srcML</p>
+      <p class = "paragraph_d">pandas.DataFrame: AOI dataframe with srcML</p>
 
       <h1 class = "subheader_d">Add Tokens to AOIs</h1>
 
@@ -64,7 +64,6 @@
     <p class = "paragraph_d">Adds tokens from code files to aois dataframe and returns it.</p>
 
     <h1 class = "docsection">Parameters</h1>
-
     <div class = "paragraph_d">
       <ul style = "padding-left: 40px;">
         <li style = "padding-bottom: 10px;">file_path : str path to directory where code files are stored. In EMIP this is "emip_stimulus_programs"</li>
@@ -73,8 +72,53 @@
     </div>
 
     <h1 class = "docsection">Returns</h1>
+    <p class = "paragraph_d">pandas.DataFrame: a dataframe of AOIs with token information</p>
 
-    <p class = "paragraph_d">pandas.DataFrame a dataframe of AOIs with token information</p>
+    <h1 class = "subheader_d">Find AOI</h1>
+
+    <pre class = "codehighlight" style = "width: 730px;"><code><span class = "functiondef">def</span><span class = "functionname"> find_aoi</span><span class = "misc">(</span>
+      <span class = "misc">eye_events: pd.</span><span class = "variables">Dataframe</span><span class = "op">=</span><span class = "misc">pd.</span><span class = "functiondef">Dataframe</span><span class = "misc">(),</span>
+      <span class = "misc">eye_tracker_col:</span><span class = "functiondef"> str</span><span class = "op"> = </span><span class = "string">"eye_tracker"</span></span><span class = "misc">,</span>
+      <span class = "misc">stimuli_module_col:</span><span class = "functiondef"> str</span><span class = "op"> = </span><span class = "string">"stimuli_module"</span></span><span class = "misc">,</span>
+      <span class = "misc">stimuli_name_col:</span><span class = "functiondef"> str</span><span class = "op"> = </span><span class = "string">"stimuli_name"</span><span class = "misc">, image: </span><span class = "functiondef">Image</span><span class = "op"> = </span><span class = "values">None</span>
+      <span class = "misc">level:</span><span class = "functiondef"> str</span><span class = "op"> = </span><span class = "string">"sub_line"</span><span class = "misc">, margin_height: </span><span class = "functiondef">int</span><span class = "op"> = </span><span class = "values">4</span><span class = "misc">, margin_width: </span><span class = "functiondef">int</span><span class = "op"> = </span><span class = "values">7</span>
+<span class = "misc">)</span><span class = "misc">-></span><span class = "misc">pd.</span><span class = "variables">Dataframe</span><span class = "misc">:</span></code></pre>
+    <p class = "paragraph_d">Adds tokens from code files to aois dataframe and returns it.</p>
+
+
+    <h1 class = "docsection">Parameters</h1>
+    <div class = "paragraph_d">
+      <ul style = "padding-left: 40px;">
+        <li style = "padding-bottom: 10px;">eye_events : pandas.DataFrame, optional (default pandas.DataFrame())
+              A pandas dataframe of eye events. It must contains columns that specify the name
+              of the eye tracker, stimuli module, and name of stimuli. If this dataframe is empty,
+              image must be specified.</li>
+        <li style = "padding-bottom: 10px;">eye_tracker_col : str, optional (default "eye_tracker")
+                Name of the column in eye_events dataframe that contains the name of the eye tracker.</li>
+        <li style = "padding-bottom: 10px;">stimuli_module_col : str, optional (default "stimuli_module")
+              Name of the column in eye_events dataframe that contains the path to the stimuli module.</li>
+        <li style = "padding-bottom: 10px;">sstimuli_name_col : str, optional (default "stimuli_name")
+              Name of the column in eye_events dataframe that contains the name of the stimuli.</li>
+        <li style = "padding-bottom: 10px;">image : PIL.Image, optional (default None)
+              Stimuli image. If this is empty, eye_events must be specified.</li>
+        <li style = "padding-bottom: 10px;">level : str, optional (default "sub-line")
+              Level of detection in AOIs.
+              "Line" for each line as an AOI or "sub-line" for each token as an AOI.</li>
+        <li style = "padding-bottom: 10px;">margin_height : int, optional (default 4)
+              Marginal height when finding AOIs, use smaller number for tight text layout.</li>
+        <li style = "padding-bottom: 10px;">margin_width : int, optional (default 7)
+              Marginal width when finding AOIs, use smaller number for tight text layout.</li>
+      </ul>
+    </div>
+
+    <h1 class = "docsection">Returns</h1>
+    <p class = "paragraph_d">pandas.DataFrame: a pandas DataFrame of area of interest detected by the method</p>
+
+
+
+
+
+
 
     </main>
 

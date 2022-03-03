@@ -136,7 +136,7 @@
   padding-bottom: 15px;
   border-color: gray;
   margin-left: 355px;
-  width: 460px;
+  width: 470px;
   border-radius: 4px;
   position: relative;
   top: 20px;
@@ -207,4 +207,25 @@
   padding-top: 40px;
   padding-left: 30px;
   margin-left: 325px;
+}
+
+.op{
+  font-family: 'Mulish', sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  color: #00B4FF;
+}
+
+.string{
+  font-family: 'Mulish', sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  color: #18FF00;
+}
+
+.values{
+  font-family: 'Mulish', sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  color: #FF00E0;
 }
